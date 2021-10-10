@@ -18,6 +18,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
@@ -25,109 +30,137 @@
     crossorigin="anonymous"
   ></script>
   <body>
-    <!--Navbar-->
-    <nav
-      class="
-        margin-nav
-        navbar navbar-expand-lg navbar-light
-        bg-light
-        border-txt
-      "
-    >
-      <div class="container">
-        <a class="navbar-brand text-gras" href="index.html">Logo</a>
+    <div class="container">
+      <!--Navbar-->
+      <nav
+        class="margin-nav navbar navbar-expand-lg my-1 text-uppercase"
+        id="mainNav"
+      >
+        <div class="container">
+          <a class="navbar-brand text-gras" href="index.html">Logo</a>
+          <button
+            class="
+              navbar-toggler
+              text-uppercase
+              font-weight-bold
+              text-white
+              rounded
+            "
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  class="active"
+                  aria-current="page"
+                  href="index.html"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./listesDesStagiaires.html"
+                  >Nos Stagiaires</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Fin Navbar-->
+      <h2 class="mt-3">
+        <i class="fa fa-users mx-3"></i>Listes des stagiaires
+      </h2>
+      <div class="mx-3 table-responsive">
+        <table class="table table-hover m-1 table-light">
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Prénom</th>
+              <th>Email</th>
+              <th>Etudes faites</th>
+              <th>Bio</th>
+              <th colspan="2" class="text-center">Action</th>
+            </tr>
+          </thead>
+          <tbody id="listeStag"></tbody>
+        </table>
+      </div>
+
+      <div>
         <button
-          class="navbar-toggler"
+          class="btn btn-primary m-3"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          value="Ajouter"
+          onclick="window.location.href='./ajoutStagiaire.html';"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i class="fa fa-plus mx-1"></i> Ajouter
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                class="active"
-                aria-current="page"
-                href="index.html"
-                >Accueil</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./listesDesStagiaires.html"
-                >Nos Stagiaires</a
-              >
-            </li>
-          </ul>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col align-self-start"></div>
+          <div class="col align-self-center">
+            <div class="row mt-3 pb-3">
+              <div class="my-card hidden" id="voir">
+                <div class="card-body green-card">
+                  <div class="card-text">
+                    <div id="voirNom"></div>
+                    <div id="voirPrenom"></div>
+                    <div id="voirEmail"></div>
+                    <div id="voirEtudes"></div>
+                    <div id="voirBio"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col align-self-end"></div>
         </div>
       </div>
-    </nav>
-    <!-- Fin Navbar-->
 
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Nom</th>
-          <th>Prénom</th>
-          <th>Email</th>
-          <th>Etudes faites</th>
-          <th>Bio</th>
-          <th colspan="2">Action</th>
-        </tr>
-      </thead>
-      <tbody id="listeStag"></tbody>
-    </table>
+      <!--debut footer-->
+      <footer class="footer text-center mt-4">
+        <div class="container">
+          <div class="row">
+            <!-- Footer Location-->
+            <div class="col-md-6 my-2">
+              <h5>Notre adresse</h5>
 
-    <div>
-      <input
-        class="btn btn-primary"
-        type="button"
-        value="Ajouter"
-        onclick="window.location.href='./ajoutStagiaire.html';"
-      />
-    </div>
-    <div id="voir">
-      <div id="voirNom"></div>
-      <div id="voirPrenom"></div>
-      <div id="voirEmail"></div>
-      <div id="voirEtudes"></div>
-      <div id="voirBio"></div>
-    </div>
-    <div class="container-fluid">
-      <footer class="p-5">
-        <div class="row">
-          <div class="col-md-6 my-2">
-            <h5>Notre adresse</h5>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              similique ipsam excepturi maxime in beatae magnam vero hic iusto.
+              Voluptatum beatae aut saepe velit magni repellat minus eaque,
+              animi sapiente?
+            </div>
 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            similique ipsam excepturi maxime in beatae magnam vero hic iusto.
-            Voluptatum beatae aut saepe velit magni repellat minus eaque, animi
-            sapiente?
-          </div>
-
-          <div class="col-md-6 my-2">
-            <form>
-              <h5>S'inscrire a la newsletter</h5>
-              <div class="d-flex w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden"
-                  >Votre adresse mail</label
-                >
-                <input
-                  id="newsletter1"
-                  type="text"
-                  class="form-control"
-                  placeholder="Email address"
-                />
-                <button class="btn btn-primary" type="button">
-                  S'inscrire
-                </button>
-              </div>
-            </form>
+            <div class="col-md-6 my-2">
+              <form>
+                <h5>S'inscrire a la newsletter</h5>
+                <div class="d-flex w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden"
+                    >Votre adresse mail</label
+                  >
+                  <input
+                    id="newsletter1"
+                    type="text"
+                    class="form-control"
+                    placeholder="Email address"
+                  />
+                  <button class="btn btn-primary" type="button">
+                    S'inscrire
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </footer>

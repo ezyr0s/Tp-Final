@@ -20,14 +20,16 @@ for (let i = 0; i < stagiaires.length; i++) {
 
   const tdDelete = document.createElement("td");
   const deleteButton = document.createElement("button");
-  deleteButton.classList.add("btn");
-  deleteButton.classList.add("btn-danger");
+  deleteButton.classList.add("btn", "btn-outline-danger", "mx-2");
+  tdDelete.classList.add("text-center");
+  const tdsee = document.createElement("td");
   const seeButton = document.createElement("button");
-  seeButton.classList.add("btn");
-  seeButton.classList.add("btn-primary");
-  seeButton.innerText = "Voir";
+  seeButton.classList.add("btn", "btn-outline-dark");
   deleteButton.innerText = "Supprimer";
   tdDelete.append(seeButton, deleteButton);
+
+  seeButton.innerHTML = "<i class='fa fa-eye'></i>";
+  deleteButton.innerHTML = "<i class='fa fa-trash'></i>";
 
   seeButton.addEventListener("click", function () {
     const voirNom = document.querySelector("#voirNom");
@@ -48,6 +50,7 @@ for (let i = 0; i < stagiaires.length; i++) {
 
     const voir = document.querySelector("#voir");
     voir.classList.add("voir");
+    voir.classList.remove("hidden");
   });
 
   deleteButton.addEventListener("click", function () {

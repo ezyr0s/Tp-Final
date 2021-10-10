@@ -25,156 +25,186 @@
     crossorigin="anonymous"
   ></script>
   <body>
-    <!--Navbar-->
-    <nav
-      class="
-        margin-nav
-        navbar navbar-expand-lg navbar-light
-        bg-light
-        border-txt
-      "
-    >
-      <div class="container">
-        <a class="navbar-brand text-gras" href="index.html">Logo</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                class="active"
-                aria-current="page"
-                href="index.html"
-                >Accueil</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./listesDesStagiaires.html">Nos Stagiaires</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Fin Navbar-->
-
-
-
     <div class="container">
-      <form class="row g-3" id="formStagiaire">
-        <div class="col-md-10">
-          <label for="validationServer01" class="form-label">Votre Nom</label>
-          <input
-            type="text"
-            class="form-control"
-            id="validationServer01"
-            placeholder="Nom"
-            required
-            pattern="[A-Za-z]+"
-          />
-          
-          <br />
-        </div>
-        <div class="col-md-10">
-          <label for="validationServer02" class="form-label"
-            >Votre Prénom</label
+      <!--Navbar-->
+      <nav
+        class="margin-nav navbar navbar-expand-lg my-1 text-uppercase"
+        id="mainNav"
+      >
+        <div class="container">
+          <a class="navbar-brand text-gras" href="index.html">Logo</a>
+          <button
+            class="
+              navbar-toggler
+              text-uppercase
+              font-weight-bold
+              text-white
+              rounded
+            "
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-          <input
-            type="text"
-            class="form-control"
-            id="validationServer02"
-            placeholder="Prénom"
-            required
-            pattern="[A-Za-z]+"
-          />
-          
-        </div>
-        <div class="mb-3 col-10">
-          <label for="exampleInputEmail1" class="form-label">Ton adresse mail </label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-          <div id="emailHelp" class="form-text"></div>
-        </div>
-
-        <div class="col-md-10">
-          <label for="validationServer04" class="form-label"
-            >Etudes Faites</label
-          >
-          <select
-            class="form-select"
-            id="validationServer04"
-            aria-describedby="validationServer04Feedback"
-            required
-          >
-          
-            <option selected disabled value="">Choisir...</option>
-            <option>Développement Java</option>
-            <option>Développement Javascript</option>
-            <option>Développement Csharp</option>
-          </select>
-          <div id="validationServer04Feedback" class="invalid-feedback">
-           
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  class="active"
+                  aria-current="page"
+                  href="index.html"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./listesDesStagiaires.html"
+                  >Nos Stagiaires</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="mb-3 col-10">
-          <label for="validationTextarea" class="form-label">Bio</label>
-          <textarea class="form-control" id="validationTextarea" placeholder="Votre bio" required></textarea>
-          
-        </div
-
-        <div class="col-10 ms-auto">
-          <div class="form-check"></div>
-        </div>
-        <div class="col-12">
-          <button class="btn btn-primary" type="submit">Ajouter </button>
-        </div>
-        
-      </form>
-    </div>
-    <!--Début footer -->
-    <div class="container-fluid">
-      <footer class="p-5">
+      </nav>
+      <h2>Nous contacter</h2>
+      <div class="container mt-5">
         <div class="row">
-          <div class="col-md-6 my-2">
-            <h5>Notre adresse</h5>
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            similique ipsam excepturi maxime in beatae magnam vero hic iusto.
-            Voluptatum beatae aut saepe velit magni repellat minus eaque, animi
-            sapiente?
-          </div>
-
-          <div class="col-md-6 my-2">
-            <form>
-              <h5>S'inscrire a la newsletter</h5>
-              <div class="d-flex w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden"
-                  >Votre adresse mail</label
+          <div class="col-md-3 align-self-start"></div>
+          <div class="col-md-7 align-self-center">
+            <form class="row g-3" id="formStagiaire">
+              <div class="col-md-10">
+                <label for="validationServer01" class="form-label"
+                  >Votre Nom</label
                 >
                 <input
-                  id="newsletter1"
                   type="text"
                   class="form-control"
-                  placeholder="Email address"
+                  id="validationServer01"
+                  placeholder="Nom"
+                  required
+                  pattern="[A-Za-z]+"
                 />
-                <button class="btn btn-primary" type="button">
-                  S'inscrire
-                </button>
+
+                <br />
+              </div>
+              <div class="col-md-10">
+                <label for="validationServer02" class="form-label"
+                  >Votre Prénom</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationServer02"
+                  placeholder="Prénom"
+                  required
+                  pattern="[A-Za-z]+"
+                />
+              </div>
+              <div class="mb-3 col-10">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Ton adresse mail
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  required
+                />
+                <div id="emailHelp" class="form-text"></div>
+              </div>
+
+              <div class="col-md-10">
+                <label for="validationServer04" class="form-label"
+                  >Etudes Faites</label
+                >
+                <select
+                  class="form-select"
+                  id="validationServer04"
+                  aria-describedby="validationServer04Feedback"
+                  required
+                >
+                  <option selected disabled value="">Choisir...</option>
+                  <option>Développement Java</option>
+                  <option>Développement Javascript</option>
+                  <option>Développement Csharp</option>
+                </select>
+                <div
+                  id="validationServer04Feedback"
+                  class="invalid-feedback"
+                ></div>
+              </div>
+              <div class="mb-3 col-10">
+                <label for="validationTextarea" class="form-label">Bio</label>
+                <textarea
+                  class="form-control"
+                  id="validationTextarea"
+                  placeholder="Votre bio"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="col-10 ms-auto">
+                <div class="form-check"></div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Ajouter</button>
               </div>
             </form>
+          </div>
+          <div class="col-md-2 align-self-end"></div>
+        </div>
+      </div>
+
+      <!-- Fin Navbar-->
+
+      <!--Début footer -->
+      <footer class="footer text-center mt-4">
+        <div class="container">
+          <div class="row">
+            <!-- Footer Location-->
+            <div class="col-md-6 my-2">
+              <h5>Notre adresse</h5>
+
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              similique ipsam excepturi maxime in beatae magnam vero hic iusto.
+              Voluptatum beatae aut saepe velit magni repellat minus eaque,
+              animi sapiente?
+            </div>
+
+            <div class="col-md-6 my-2">
+              <form>
+                <h5>S'inscrire a la newsletter</h5>
+                <div class="d-flex w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden"
+                    >Votre adresse mail</label
+                  >
+                  <input
+                    id="newsletter1"
+                    type="text"
+                    class="form-control"
+                    placeholder="Email address"
+                  />
+                  <button class="btn btn-primary" type="button">
+                    S'inscrire
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </footer>
     </div>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+    integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
   <script src="form.js"></script>
 </html>
