@@ -1,10 +1,3 @@
-.premiere-image {
-  background-image: url(img/img1.jpg);
-  height: 200px;
-  width: 100%;
-  border: 2px solid black;
-}
-
 .b-example-divider {
   height: 3rem;
   background-color: rgba(0, 0, 0, 0.1);
@@ -23,7 +16,7 @@ body {
 }
 
 .jumbotron {
-  background: url(https://source.unsplash.com/1600x1050/?nature);
+  background: url(https://source.unsplash.com/1600x800/?nature);
   background-repeat: no-repeat;
   background-attachment: fixed;
 

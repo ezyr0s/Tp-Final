@@ -17,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <script
@@ -106,11 +110,12 @@
               </div>
               <div class="mb-3 col-10">
                 <label for="exampleInputEmail1" class="form-label"
-                  >Ton adresse mail
+                  >Votre adresse mail
                 </label>
                 <input
                   type="email"
                   class="form-control"
+                  placeholder="Adresse mail"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   required
@@ -120,7 +125,7 @@
 
               <div class="col-md-10">
                 <label for="validationServer04" class="form-label"
-                  >Etudes Faites</label
+                  >Etudes</label
                 >
                 <select
                   class="form-select"
@@ -143,7 +148,7 @@
                 <textarea
                   class="form-control"
                   id="validationTextarea"
-                  placeholder="Votre bio"
+                  placeholder="Écrivez quelques lignes"
                   required
                 ></textarea>
               </div>
@@ -152,7 +157,14 @@
                 <div class="form-check"></div>
               </div>
               <div class="col-12">
-                <button class="btn btn-primary" type="submit">Ajouter</button>
+                <button
+                  class="btn btn-primary m-3"
+                  type="button"
+                  value="Ajouter"
+                  onclick="window.location.href='./ajoutStagiaire.html';"
+                >
+                  <i class="fa fa-plus mx-1"></i> Ajouter
+                </button>
               </div>
             </form>
           </div>
@@ -170,10 +182,7 @@
             <div class="col-md-6 my-2">
               <h5>Notre adresse</h5>
 
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              similique ipsam excepturi maxime in beatae magnam vero hic iusto.
-              Voluptatum beatae aut saepe velit magni repellat minus eaque,
-              animi sapiente?
+              Entre Paris et Nantes sur un Chemin de Teams S21 numéro 003658
             </div>
 
             <div class="col-md-6 my-2">
@@ -187,7 +196,7 @@
                     id="newsletter1"
                     type="text"
                     class="form-control"
-                    placeholder="Email address"
+                    placeholder="Adresse mail"
                   />
                   <button class="btn btn-primary" type="button">
                     S'inscrire
